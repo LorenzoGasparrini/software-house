@@ -1,0 +1,48 @@
+body{
+	background-color: #FDFFFC;
+}
+
+header{
+	background-color: #363432;
+	color: white;
+}
+
+header h1 {
+  text-align: center; /* centra il testo */
+  padding: 20px;      /* aggiunge spazio interno (puoi cambiare il valore) */
+}
+
+
+.nav-bar {
+  display: flex;
+  gap: 20px; /* Spazio tra i link */
+  justify-content: center; /* Centra i link orizzontalmente */
+  background-color: #222; /* Colore di sfondo (facoltativo) */
+  padding: 10px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/*funzione per sottolineare la sezione in cui si è*/
+.nav-link.active { 
+  text-decoration: underline;
+}
+
+footer {
+    background-color: #820A0C;
+    color: white;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 0 10px;
+}
