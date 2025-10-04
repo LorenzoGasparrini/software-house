@@ -21,6 +21,14 @@ header h1 {
   padding: 10px;
 }
 
+.nav-bar a{
+  color: #898989;
+}
+
+.nav-bar a:hover {
+  color: white;
+}
+
 .nav-link {
   color: white;
   text-decoration: none;
@@ -45,4 +53,12 @@ footer {
 .social-icons img {
     width: 30px;
     margin: 0 10px;
+}
+
+.div a img{
+  opacity: 50%;
+}
+
+.div a img:hover{
+  opacity: 0%;
 }
