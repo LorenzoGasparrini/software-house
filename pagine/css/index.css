@@ -1,45 +1,89 @@
+/* Colore di sfondo della pagina */
 body{
-	background-color: #FDFFFC;
+  background-color: #FDFFFC;
 }
 
+/* Stile dell'header: sfondo e colore testo */
 header{
-	background-color: #363432;
-	color: white;
+  background-color: #363432;
+  color: white;
 }
 
+/* Contenitore logo + titolo: layout flessibile e centrato */
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Stile immagine del logo */
+.logo-img {
+  width: 60px;
+  height: auto;
+}
+
+/* Titolo principale nell'header */
 header h1 {
-  text-align: center; /* centra il testo */
-  padding: 20px;      /* aggiunge spazio interno (puoi cambiare il valore) */
+  text-align: center;
+  padding: 20px;
 }
 
-
+/* Barra di navigazione: layout flessibile e centrato */
 .nav-bar {
   display: flex;
-  gap: 20px; /* Spazio tra i link */
-  justify-content: center; /* Centra i link orizzontalmente */
-  background-color: #222; /* Colore di sfondo (facoltativo) */
+  gap: 20px;
+  justify-content: center;
+  background-color: #222;
   padding: 10px;
 }
 
+/* Colore dei link nella navbar */
 .nav-bar a{
   color: #898989;
 }
 
+/* Colore dei link al passaggio del mouse */
 .nav-bar a:hover {
   color: white;
 }
 
+/* Stile generale dei link */
 .nav-link {
   color: white;
   text-decoration: none;
   font-weight: bold;
 }
 
-/*funzione per sottolineare la sezione in cui si è*/
+/* Sottolinea il link attivo */
 .nav-link.active { 
   text-decoration: underline;
 }
 
+/* Contenitore della sezione "Chi siamo?" */
+.about {
+  text-align: center;
+  margin: 60px auto;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+/* Titolo "Chi siamo?" */
+.about h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Testo descrittivo "Chi siamo?" */
+.about p {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.6;
+  color: black;
+}
+
+/* Stile del footer */
 footer {
     background-color: #820A0C;
     color: white;
@@ -50,15 +94,18 @@ footer {
     text-align: center;
 }
 
+/* Dimensione e margini icone social */
 .social-icons img {
     width: 30px;
     margin: 0 10px;
 }
 
+/* Opacità icone nei link */
 .div a img{
   opacity: 50%;
 }
 
+/* Opacità icone al passaggio del mouse */
 .div a img:hover{
   opacity: 0%;
 }
