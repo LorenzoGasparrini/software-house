@@ -68,7 +68,9 @@ header h5 {
 }
 
 .about h1{
-  font-size: 40;
+  font-size: 6rem;
+  margin-bottom: 20px;
+  margin-top: -60px;
 }
 
 /* Titolo "Chi siamo?" */
@@ -85,6 +87,14 @@ header h5 {
   line-height: 1.6;
   color: black;
 }
+
+.logo-gif {
+  display: block;       /* la rende un blocco */
+  margin: 30px auto;    /* la centra orizzontalmente */
+  width: 100px;         /* dimensione */
+  height: auto;         /* mantiene le proporzioni di width*/
+}
+
 
 /* Stile del footer */
 footer {
