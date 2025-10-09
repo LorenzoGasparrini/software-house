@@ -12,19 +12,18 @@ header{
 /* Contenitore logo + titolo: layout flessibile e centrato */
 .logo-container {
   display: flex;
+  justify-content: left;
   align-items: center;
-  justify-content: center;
-  gap: 10px;
 }
 
 /* Stile immagine del logo */
 .logo-img {
-  width: 60px;
+  width: 40px;
   height: auto;
 }
 
 /* Titolo principale nell'header */
-header h1 {
+header h5 {
   text-align: center;
   padding: 20px;
 }
@@ -32,14 +31,14 @@ header h1 {
 /* Barra di navigazione: layout flessibile e centrato */
 .nav-bar {
   display: flex;
-  gap: 20px;
-  justify-content: center;
   background-color: #222;
   padding: 10px;
 }
 
 /* Colore dei link nella navbar */
 .nav-bar a{
+  padding: 20px;
+  justify-content: center;
   color: #898989;
 }
 
