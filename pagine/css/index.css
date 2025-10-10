@@ -67,10 +67,11 @@ header h5 {
   padding: 0 20px;
 }
 
-.about h1{
+.h1{
   font-size: 6rem;
   margin-bottom: 20px;
   margin-top: -60px;
+  color: #363432;
 }
 
 /* Titolo "Chi siamo?" */
@@ -78,6 +79,7 @@ header h5 {
   font-size: 2.2rem;
   font-weight: bold;
   margin-bottom: 15px;
+  color: #363432;
 }
 
 /* Testo descrittivo "Chi siamo?" */
@@ -86,12 +88,13 @@ header h5 {
   font-weight: 300;
   line-height: 1.6;
   color: black;
+  margin-bottom: -50px;
 }
 
 .logo-gif {
   display: block;       /* la rende un blocco */
   margin: 30px auto;    /* la centra orizzontalmente */
-  width: 100px;         /* dimensione */
+  width: 250px;         /* dimensione */
   height: auto;         /* mantiene le proporzioni di width*/
 }
 
