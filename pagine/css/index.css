@@ -1,127 +1,138 @@
 /* Colore di sfondo della pagina */
-body{
+body {
   background-color: #FDFFFC;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* per spingere il footer in basso */
 }
 
-/* Stile dell'header: sfondo e colore testo */
-header{
+/* Stile dell'header */
+header {
   background-color: #363432;
   color: white;
 }
 
-/* Contenitore logo + titolo: layout flessibile e centrato */
+/* Contenitore logo + titolo */
 .logo-container {
   display: flex;
   justify-content: left;
   align-items: center;
 }
 
-/* Stile immagine del logo */
 .logo-img {
   width: 40px;
   height: auto;
 }
 
-/* Titolo principale nell'header */
 header h5 {
   text-align: center;
   padding: 20px;
 }
 
-/* Barra di navigazione: layout flessibile e centrato */
+/* Navbar */
 .nav-bar {
   display: flex;
   background-color: #222;
   padding: 10px;
 }
 
-/* Colore dei link nella navbar */
-.nav-bar a{
+.nav-bar a {
   padding: 20px;
   justify-content: center;
   color: #898989;
 }
 
-/* Colore dei link al passaggio del mouse */
 .nav-bar a:hover {
   color: white;
 }
 
-/* Stile generale dei link */
 .nav-link {
   color: white;
   text-decoration: none;
   font-weight: bold;
 }
 
-/* Sottolinea il link attivo */
-.nav-link.active { 
+.nav-link.active {
   text-decoration: underline;
 }
 
-/* Contenitore della sezione "Chi siamo?" */
+/* Benvenuto */
+.welcome {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #363432;
+  color: white;
+}
+
+.welcome h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.welcome p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto 30px auto;
+}
+
+.welcome-img {
+  width: 250px;
+  height: auto;
+  margin-top: 20px;
+}
+
+
+/* Contenitore About */
 .about {
   text-align: center;
-  margin: 60px auto;
-  max-width: 800px;
-  padding: 0 20px;
+  margin: 40px auto;
+  max-width: 1200px;       /* più largo */
+  padding: 40px 60px;      /* più spazio interno */
+  background-color: #f9f9f9; /* leggero contrasto col body */
+  border-radius: 10px;     /* angoli arrotondati */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* effetto card */
 }
 
-.h1{
-  font-size: 6rem;
-  margin-bottom: 20px;
-  margin-top: -60px;
-  color: #363432;
-}
-
-/* Titolo "Chi siamo?" */
-.h2 {
-  font-size: 2.2rem;
+.about h2 {
+  font-size: 2.5rem;       /* titoli più grandi */
   font-weight: bold;
-  margin-bottom: 15px;
-  color: #363432;
+  margin: 60px 0 25px 0;
+  color: #D50D14;
 }
 
-/* Testo descrittivo "Chi siamo?" */
 .about p {
-  font-size: 1rem;
+  font-size: 1.2rem;       /* testo più grande */
   font-weight: 300;
-  line-height: 1.6;
+  line-height: 2;
   color: black;
-  margin-bottom: -50px;
+  margin-bottom: 40px;     /* più spazio tra paragrafi */
 }
+
 
 .logo-gif {
-  display: block;       /* la rende un blocco */
-  margin: 30px auto;    /* la centra orizzontalmente */
-  width: 250px;         /* dimensione */
-  height: auto;         /* mantiene le proporzioni di width*/
+  display: block;
+  margin: 30px auto;
+  width: 250px;
+  height: auto;
 }
 
-
-/* Stile del footer */
+/* Footer */
 footer {
-    background-color: #820A0C;
-    color: white;
-    padding: 15px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
+  background-color: #820A0C;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: auto; /* spinge il footer in basso */
 }
 
-/* Dimensione e margini icone social */
 .social-icons img {
-    width: 30px;
-    margin: 0 10px;
+  width: 30px;
+  margin: 0 10px;
+  opacity: 0.7;
+  transition: opacity 0.2s;
 }
 
-/* Opacità icone nei link */
-.div a img{
-  opacity: 50%;
-}
-
-/* Opacità icone al passaggio del mouse */
-.div a img:hover{
-  opacity: 0%;
+.social-icons img:hover {
+  opacity: 1;
 }
