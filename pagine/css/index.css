@@ -120,19 +120,16 @@ header h5 {
 /* Footer */
 footer {
   background-color: #820A0C;
-  color: white;
+  color: #fff;
   padding: 20px;
   text-align: center;
   margin-top: auto; /* spinge il footer in basso */
 }
 
-.social-icons img {
-  width: 30px;
-  margin: 0 10px;
-  opacity: 0.7;
-  transition: opacity 0.2s;
+.contact-item a {
+  text-decoration: none;
 }
 
-.social-icons img:hover {
-  opacity: 1;
+.contact-item a:hover {
+  text-decoration: underline;
 }
