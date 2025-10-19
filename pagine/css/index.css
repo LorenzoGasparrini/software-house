@@ -172,3 +172,25 @@ footer {
 .image-box:hover .overlay-text {
   opacity: 1;
 }
+
+/* Sezione Tabella Abbonamenti */
+.abbonamenti-table {
+  background-color: #363432; /* sfondo principale */
+  color: white;              /* colore del testo */
+  border: 2px solid #D50D14; /* bordo rosso */
+}
+
+.abbonamenti-table th {
+  background-color: #D50D14; /* intestazione rossa */
+  color: white;
+}
+
+.abbonamenti-table td {
+  background-color: #222; /* celle grigio scuro */
+  color: #f5f5f5;
+}
+
+.abbonamenti-table tr:hover td {
+  background-color: #B30B10; /* colore hover più acceso */
+  transition: background-color 0.3s ease;
+}
