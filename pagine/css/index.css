@@ -194,3 +194,22 @@ footer {
   background-color: #B30B10; /* colore hover più acceso */
   transition: background-color 0.3s ease;
 }
+
+/*abbonamento*/
+section {
+  text-align:center; 
+  background-color:#D50D14; 
+  color:white; 
+  margin-left:110px;
+  margin-right:110px; 
+  margin-top:40px;
+  margin-bottom:40px;
+  padding-bottom:30px; 
+  padding-top:30px; 
+  border-radius:20px;
+  transition-duration: 0.5s;
+}
+
+section:hover {
+  transform: scale(1.05);
+}
