@@ -213,3 +213,14 @@ section {
 section:hover {
   transform: scale(1.05);
 }
+
+.about-item {
+  background-color: white;
+  color: #FDFFFC;
+  border: 2px solid #D50D14;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-right: 0px; /* spazio a destra */
+  margin-left: 0px;  /* spazio a sinistra */
+}
