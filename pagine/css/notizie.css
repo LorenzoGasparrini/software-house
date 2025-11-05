@@ -3,7 +3,7 @@
   padding: 25px 30px;
   border-radius: 10px;
   margin-bottom: 30px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05); /* ombra leggera per effetto rilievo */
   text-align: left;
 }
 
@@ -13,6 +13,7 @@
   margin-bottom: 15px;
 }
 
+/* Testo descrittivo della notizia */
 .news-item p {
   font-size: 1rem;
   line-height: 1.6;

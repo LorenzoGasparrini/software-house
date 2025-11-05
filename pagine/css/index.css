@@ -1,18 +1,15 @@
-/* Colore di sfondo della pagina */
 body {
   background-color: #FDFFFC;
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* per spingere il footer in basso */
+  min-height: 100vh;
 }
 
-/* Stile dell'header */
 header {
   background-color: #363432;
   color: white;
 }
 
-/* Contenitore logo + titolo */
 .logo-container {
   display: flex;
   justify-content: left;
@@ -29,7 +26,6 @@ header h5 {
   padding: 20px;
 }
 
-/* Navbar */
 .nav-bar {
   display: flex;
   background-color: #222;
@@ -56,7 +52,6 @@ header h5 {
   text-decoration: underline;
 }
 
-/* Benvenuto */
 .welcome {
   text-align: center;
   padding: 80px 20px;
@@ -82,33 +77,45 @@ header h5 {
   margin-top: 20px;
 }
 
+.main-title {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 60px;
+}
 
-/* Contenitore About */
+.main-title h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  color: #D50D14;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-shadow: 4px 4px 0 #000;
+}
+
 .about {
   text-align: center;
   margin: 40px auto;
-  max-width: 1200px;       /* più largo */
-  padding: 40px 60px;      /* più spazio interno */
-  background-color: #f9f9f9; /* leggero contrasto col body */
-  border-radius: 10px;     /* angoli arrotondati */
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* effetto card */
+  max-width: 1200px;
+  padding: 40px 60px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .about h2 {
-  font-size: 2.5rem;       /* titoli più grandi */
+  font-size: 2rem;
   font-weight: bold;
-  margin: 60px 0 25px 0;
+  margin: 40px 0 20px 0;
   color: #D50D14;
 }
 
 .about p {
-  font-size: 1.2rem;       /* testo più grande */
+  font-size: 1.15rem;
   font-weight: 300;
-  line-height: 2;
-  color: black;
-  margin-bottom: 40px;     /* più spazio tra paragrafi */
+  line-height: 1.9;
+  color: #000;
+  margin-bottom: 40px;
 }
-
 
 .logo-gif {
   display: block;
@@ -117,21 +124,18 @@ header h5 {
   height: auto;
 }
 
-/* Footer */
-footer {
-  background-color: #820A0C;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-  margin-top: auto; /* spinge il footer in basso */
+.about-item {
+  background-color: #fff;
+  border: 2px solid #D50D14;
+  border-radius: 15px;
+  padding: 30px;
+  margin-bottom: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.contact-item a {
-  text-decoration: none;
-}
-
-.contact-item a:hover {
-  text-decoration: underline;
+.about-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.2);
 }
 
 .image-box {
@@ -154,7 +158,7 @@ footer {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: white; /* O puoi usare rgba(0,0,0,0.7) per overlay scuro */
+  background-color: white;
   color: #000;
   display: flex;
   flex-direction: column;
@@ -173,54 +177,62 @@ footer {
   opacity: 1;
 }
 
-/* Sezione Tabella Abbonamenti */
 .abbonamenti-table {
-  background-color: #363432; /* sfondo principale */
-  color: white;              /* colore del testo */
-  border: 2px solid #D50D14; /* bordo rosso */
+  background-color: #363432;
+  color: white;
+  border: 2px solid #D50D14;
 }
 
 .abbonamenti-table th {
-  background-color: #D50D14; /* intestazione rossa */
+  background-color: #D50D14;
   color: white;
 }
 
 .abbonamenti-table td {
-  background-color: #222; /* celle grigio scuro */
+  background-color: #222;
   color: #f5f5f5;
 }
 
 .abbonamenti-table tr:hover td {
-  background-color: #B30B10; /* colore hover più acceso */
+  background-color: #B30B10;
   transition: background-color 0.3s ease;
 }
 
-/*abbonamento*/
 section {
-  text-align:center; 
-  background-color:#D50D14; 
-  color:white; 
-  margin-left:110px;
-  margin-right:110px; 
-  margin-top:40px;
-  margin-bottom:40px;
-  padding-bottom:30px; 
-  padding-top:30px; 
-  border-radius:20px;
-  transition-duration: 0.5s;
+  text-align: center;
+  background-color: #D50D14;
+  color: white;
+  margin: 40px 110px;
+  padding: 30px 0;
+  border-radius: 20px;
+  transition: transform 0.5s;
 }
 
 section:hover {
   transform: scale(1.05);
 }
 
-.about-item {
-  background-color: white;
-  color: #FDFFFC;
-  border: 2px solid #D50D14;
-  border-radius: 10px;
+footer {
+  background-color: #820A0C;
+  color: #fff;
   padding: 20px;
-  margin-bottom: 20px;
-  margin-right: 0px; /* spazio a destra */
-  margin-left: 0px;  /* spazio a sinistra */
+  text-align: center;
+  margin-top: auto;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 5px;
+}
+
+.contact-item a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
 }
